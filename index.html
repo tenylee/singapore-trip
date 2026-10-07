@@ -1,0 +1,298 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>新加坡 · 5 天行程单</title>
+<style>
+  :root {
+    --bg: #f0f7f0;
+    --fg: #1a3a1a;
+    --muted: #5a8a6a;
+    --line: #81c784;
+    --neutral: #e8f5e9;
+    --card-border: #a5d6a7;
+    --accent: #2e7d32;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #e8f5e9 0%, #e0f2f1 50%, #e8f5e9 100%);
+    color: var(--fg);
+    font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 16px 40px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 8px 0 4px;
+    background: linear-gradient(135deg, #1565c0, #2e7d32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  .timeline {
+    position: relative;
+    padding-left: 36px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #42a5f5, #26c6da, #4caf50, #ff9800, #e91e63);
+    border-radius: 2px;
+  }
+  .day-card {
+    position: relative;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(46,125,50,0.10);
+    border: 1px solid var(--card-border);
+  }
+  .day-card::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 22px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  .day-card[data-day="1"]::before { background: #42a5f5; }
+  .day-card[data-day="2"]::before { background: #26c6da; }
+  .day-card[data-day="3"]::before { background: #4caf50; }
+  .day-card[data-day="4"]::before { background: #ff9800; }
+  .day-card[data-day="5"]::before { background: #e91e63; }
+
+  .day-header {
+    padding: 14px 18px 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .day-card[data-day="1"] .day-header { color: #1565c0; }
+  .day-card[data-day="2"] .day-header { color: #00838f; }
+  .day-card[data-day="3"] .day-header { color: #2e7d32; }
+  .day-card[data-day="4"] .day-header { color: #e65100; }
+  .day-card[data-day="5"] .day-header { color: #ad1457; }
+
+  .day-body { padding: 0 18px 16px; }
+  .time-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 0;
+  }
+  .time-label {
+    min-width: 80px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+  .time-content {
+    font-size: 13.5px;
+    color: #333;
+    line-height: 1.5;
+  }
+  .time-content .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 2px 4px 2px 0;
+  }
+  .tag.food { background: #fff3e0; color: #e65100; }
+  .tag.spot { background: #e8f5e9; color: #2e7d32; }
+  .tag.hotel { background: #e3f2fd; color: #1565c0; }
+  .tag.transport { background: #f3e5f5; color: #8e24aa; }
+  .tag.note { background: #fce4ec; color: #c62828; }
+
+  .footer {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--muted);
+    padding: 12px 0;
+    line-height: 1.8;
+  }
+</style>
+<main>
+<h1>🇸🇬 新加坡 · 5 天行程单</h1>
+<p class="subtitle">10/12（周一）— 10/16（周五）｜5 天 4 晚</p>
+
+<div class="timeline">
+
+<!-- Day 1 -->
+<div class="day-card" data-day="1">
+  <div class="day-header">✈️ Day 1 · 10/12 周一 ｜ 抵达新加坡</div>
+  <div class="day-body">
+    <div class="time-row">
+      <div class="time-label">12:30</div>
+      <div class="time-content"><span class="tag transport">✈️ 抵达新加坡</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">15:00</div>
+      <div class="time-content">
+        <span class="tag hotel">🏨 酒店 Check-in</span>
+        <br/><span style="color:#888;font-size:12px;">时间充裕可先逛樟宜机场</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">17:30</div>
+      <div class="time-content">下班集合 🤝</div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">18:00</div>
+      <div class="time-content"><span class="tag food">🦀 晚餐 — 珍宝海鲜</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">晚餐后</div>
+      <div class="time-content">
+        <span class="tag spot">🌃 克拉码头</span>
+        <span class="tag spot">🐟 鱼尾狮公园</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 2 -->
+<div class="day-card" data-day="2">
+  <div class="day-header">🎡 Day 2 · 10/13 周二 ｜ 文化 + 圣淘沙</div>
+  <div class="day-body">
+    <div class="time-row">
+      <div class="time-label">早餐</div>
+      <div class="time-content"><span class="tag food">🍳 亚坤咖椰吐司</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">上午</div>
+      <div class="time-content">
+        <span class="tag spot">🎭 新加坡文化中心</span>
+        <span class="tag note">10am-8pm · 约 1-2 小时</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">下午</div>
+      <div class="time-content">
+        <span class="tag spot">🐠 圣淘沙 S.E.A. 海洋馆</span>
+        <span class="tag note">10am-8pm</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">傍晚</div>
+      <div class="time-content">
+        <span class="tag spot">🛍️ VivoCity 逛逛</span>
+        <span class="tag food">🍽️ 晚餐（VivoCity 内）</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 3 -->
+<div class="day-card" data-day="3">
+  <div class="day-header">🌿 Day 3 · 10/14 周三 ｜ 文化街区 + 花园</div>
+  <div class="day-body">
+    <div class="time-row">
+      <div class="time-label">早餐</div>
+      <div class="time-content"><span class="tag food">🍜 Bugis 食阁</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">上午</div>
+      <div class="time-content">
+        <span class="tag spot">🛒 Bugis Street 购物</span>
+        <span class="tag spot">🎨 哈芝巷 Hajji Lane</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">午餐</div>
+      <div class="time-content"><span class="tag food">🍽️ 待定</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">下午</div>
+      <div class="time-content">
+        <span class="tag spot">🌳 滨海湾花园</span>
+        <span class="tag note">Cloud Forest 9am-9pm</span>
+        <span class="tag note">Flower Dome / Floral Fantasy 10am-9pm</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">晚餐</div>
+      <div class="time-content"><span class="tag food">🐸 田鸡粥</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 4 -->
+<div class="day-card" data-day="4">
+  <div class="day-header">🌈 Day 4 · 10/15 周四 ｜ 娘惹文化 + 老街漫步</div>
+  <div class="day-body">
+    <div class="time-row">
+      <div class="time-label">早餐</div>
+      <div class="time-content"><span class="tag food">🍽️ 待定</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">上午</div>
+      <div class="time-content">
+        <span class="tag spot">🌳 福康宁公园 Fort Canning</span>
+        <span class="tag spot">🚔 彩虹警局（Old Hill Street Police Station）</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">午餐</div>
+      <div class="time-content"><span class="tag food">🍛 娘惹餐 — Bibik Violet</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">下午</div>
+      <div class="time-content"><span class="tag spot">🏘️ 如结路 Joo Chiat / Katong</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">晚餐</div>
+      <div class="time-content"><span class="tag food">🦐 老巴刹食阁 Lau Pa Sat</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Day 5 -->
+<div class="day-card" data-day="5">
+  <div class="day-header">🛫 Day 5 · 10/16 周五 ｜ 樟宜机场 · 返程</div>
+  <div class="day-body">
+    <div class="time-row">
+      <div class="time-label">早餐</div>
+      <div class="time-content"><span class="tag food">🍽️ 待定</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">午餐</div>
+      <div class="time-content"><span class="tag food">🦀 松发肉骨茶 · 樟宜机场店</span></div>
+    </div>
+    <div class="time-row">
+      <div class="time-label">下午</div>
+      <div class="time-content">
+        <span class="tag spot">🛍️ 逛樟宜机场 Jewel / 免税店</span>
+        <span class="tag transport">✈️ 返程</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  🇸🇬 新加坡 · 5 天 4 晚<br/>
+  🌡 常年 25-32°C · 带雨具 + 防晒霜<br/>
+  🚇 MRT 出行最方便 · 备好 EZ-Link 卡
+</div>
+</main>
